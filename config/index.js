@@ -43,7 +43,7 @@ const config = {
     }
   },
   h5: {
-    publicPath: '/',
+    publicPath: '.',
     staticDirectory: 'static',
     postcss: {
       autoprefixer: {
@@ -58,6 +58,9 @@ const config = {
           generateScopedName: '[name]__[local]___[hash:base64:5]'
         }
       }
+    },
+    router: {
+      mode: 'hash' // 或者是 'browser'
     }
   }
 }
